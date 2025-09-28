@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お茶販売 - 高級茶葉の専門店</title>
+  <meta name="description" content="厳選されたお茶の葉を販売する専門店。緑茶、紅茶、ウーロン茶など、品質の高い茶葉をお届けします。">
+  <meta name="keywords" content="お茶,茶葉,緑茶,紅茶,ウーロン茶,高級茶,専門店">
+  <meta name="author" content="茶禅一味">
+  <meta property="og:title" content="お茶販売 - 高級茶葉の専門店">
+  <meta property="og:description" content="厳選されたお茶の葉を販売する専門店。緑茶、紅茶、ウーロン茶など、品質の高い茶葉をお届けします。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chazenichimi.jp">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">メインコンテンツにスキップ</a>
+  <header class="header" id="header">
+    <nav class="navigation" id="navigation">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h1>茶禅一味</h1>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+          <li class="nav-item"><a href="#home" class="nav-link">ホーム</a></li>
+          <li class="nav-item"><a href="#products" class="nav-link">製品紹介</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">会社情報</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">お問い合わせ</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">茶禅一味</h2>
+        <p class="hero-subtitle">厳選された茶葉で、至福のひとときを</p>
+        <div class="hero-cta">
+          <a href="#products" class="cta-button">製品を見る</a>
+          <a href="#contact" class="cta-button secondary">お問い合わせ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="products">
+      <div class="container">
+        <h2 class="section-title">製品紹介</h2>
+        <div class="product-grid" id="product-grid">
+          <!-- 製品カードはJavaScriptで動的に生成 -->
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">会社情報</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <h3>品質へのこだわり</h3>
+            <p>茶禅一味は、創業以来、品質の高い茶葉をお届けすることに力を注いでいます。</p>
+          </div>
+          <div class="about-image">
+            <img src="images/company/tea-garden.jpg" alt="茶園の様子" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">お問い合わせ</h2>
+        <form id="contact-form" class="contact-form">
+          <div class="form-group">
+            <label for="name">お名前 *</label>
+            <input type="text" id="name" name="name" required>
+            <span class="error-message" id="name-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス *</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="email-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="phone">電話番号</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="subject">件名 *</label>
+            <input type="text" id="subject" name="subject" required>
+            <span class="error-message" id="subject-error"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">お問い合わせ内容 *</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="error-message" id="message-error"></span>
+          </div>
+          <button type="submit" class="submit-button">送信する</button>
+          <div class="success-message" id="success-message" style="display: none;">
+            お問い合わせありがとうございます。ご連絡いたします。
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>茶禅一味</h3>
+          <p>厳選された茶葉で、至福のひとときを</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">ホーム</a></li>
+            <li><a href="#products">製品紹介</a></li>
+            <li><a href="#about">会社情報</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>お問い合わせ</h4>
+          <p>電話: 0123-456-7890</p>
+          <p>メール: info@chazenichimi.jp</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 茶禅一味. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module" defer></script>
+</body>
+</html>

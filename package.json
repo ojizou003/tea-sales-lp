@@ -1,0 +1,32 @@
+{
+  "name": "tea-sales-lp",
+  "version": "1.0.0",
+  "description": "お茶販売ランディングページ - HTML/CSS/JavaScriptのみのMVP",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "dev": "python3 -m http.server 8000",
+    "build": "echo 'ビルド完了'"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
+    "collectCoverageFrom": [
+      "**/js/**/*.js",
+      "**/*.js",
+      "!**/node_modules/**",
+      "!**/tests/**"
+    ]
+  },
+  "keywords": ["tea", "sales", "landing-page", "mvp"],
+  "author": "茶禅一味",
+  "license": "MIT"
+}
